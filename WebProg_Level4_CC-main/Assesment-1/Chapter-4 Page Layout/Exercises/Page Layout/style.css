@@ -1,0 +1,108 @@
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Tahoma;
+    src: url(font/tahoma.ttf) format('truetype');
+}
+
+h1 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 325%;
+    font-weight: 700;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+h2 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+p {
+    font-size: 150%;
+
+}
+
+ul {
+    margin-top: -15px;
+}
+
+li {
+    font-size: 150%;
+    line-height: 55px;
+    list-style: none;
+    margin-left: -40px;
+}
+
+
+nav {
+    font-size: 200%;
+    margin-top: -5px;
+}
+
+a {
+    color: #FFFFFF;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: #17072b;
+    color: #FFFFFF;
+    padding: 2%;
+    text-align: center;
+}
+
+main {
+    margin-left: 3%;
+    margin-right: -30%;
+
+}
+
+aside {
+    background-color: #172d67;
+    color: #FFFFFF;
+    float: right;
+    padding: 1%;
+    width: 500px;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    font-size: 95%;
+    margin-top: -1.5%;
+    text-align: center;
+}
+
+#footerText {
+    padding: 5px;
+}
+
+#increasedTopMargins {
+    margin-top: 55px;
+    padding-bottom: 10px;
+}
+
+#increasedTopMargins img:last-child {
+    margin-left: 5px;
+}
+
+#increasedLeftMargins {
+    margin-left: 7%;
+}
+
+.column {
+    column-count: 2;
+    column-width: 60%;
+    margin-top: 15px;
+}
+
