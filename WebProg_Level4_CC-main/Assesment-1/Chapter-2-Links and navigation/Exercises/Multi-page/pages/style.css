@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'theboldfont';
+    src: url(Fonts/theboldfont.ttf) format('truetype');
+}
+
+* {
+    line-height: 150%;
+    word-spacing: 100%;
+    letter-spacing: 0.5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: rgb(171, 0, 31);
+    padding: 1%;
+}
+
+body {
+    font-size: 130%;
+    text-align: justify;
+    background-color: rgb(24, 22, 22);
+    color: whitesmoke;
+}
+
+a { 
+    color: rgb(255, 98, 84);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    word-spacing: 20px;
+    margin-top: -20px;
+
+}
+
+nav a {
+    font-size: 17px;
+    padding: 2.5%;
+
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: 'theboldfont', sans-serif;
+    
+    font-size: 230%;
+    text-align: center;
+    margin-top: -5px;
+}
+
+h2 {
+    font-size: 200%;
+    font-family: 'theboldfont', sans-serif;
+    text-align: center;
+    padding-top: 3%;
+    letter-spacing: 7px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+h3 {
+    color: rgb(229, 0, 0);
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+h4 { 
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+p {
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+ul {
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 45px;
+}
+
+footer {
+    padding-top: 3%;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+#Three-part {
+    text-align: center;
+    border: solid 2px rgba(245, 245, 245, 0.37);
+    background-color: rgb(24, 22 22);
+    padding: 30px;
+    border-radius: 7px;
+    margin-left: 25%;
+}
+
+#FoundersCut {
+    text-align: center;
+    border: solid 2px rgba(245, 245, 245, 0.37);
+    background-color: rgb(24 22 22);
+    padding: 30px;
+    border-radius: 7px;
+    margin-right: 25%;
+}
+
+#GLcontacts {
+    display: inline-block;
+    text-align: center;
+}
+
+#Rbcontacts {
+    display: inline-block;
+    text-align: center;
+    padding-left: 10%;
+}
+
+#Mainchar {
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#Suppchar {
+    display: inline-block;
+    text-align: center;
+    padding-left: 17%;
+}
+
+#Backgchar {
+    float: right;
+    text-align: center;
+    margin-right: 10%;
+    padding-left: 10%;
+}
+
+#CreativeTeamColumns {
+    font-size: 120%;
+    text-align: center;
+    position: center;
+    column-count: 2;
+}
+
+.TwitchButton1 {
+    background-color: rgb(229, 0, 0);
+    color: whitesmoke;
+    font-family: 'theboldfont', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+}
+
+.YouTubeButton1 {
+    background-color: rgb(229, 0, 0);
+    color: whitesmoke;
+    font-family: 'theboldfont', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+    margin-left: 15px;
+}
+
+.YouTubeButton2 {
+    background-color: rgb(229, 0, 0);
+    color: whitesmoke;
+    font-family: 'theboldfont', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+}
+
+#whiteBold { 
+    color: whitesmoke;
+    font-size: 150%;
+}
+
+
+#WatchColumns {
+    column-count: 2;
+    column-gap: 5%;
+}
+
+.ParagraphSpacing p{
+    padding-bottom: 3%;
+}
