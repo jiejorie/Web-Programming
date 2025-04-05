@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- html tag containing all the contents of the overall webpage -->
+<html lang="en">
+    <!-- head tag contains the title, meta, and link tag -->
+    <head>
+        <!-- title tag defines the title of the webpage -->
+        <title>Omori-Final Duet</title>
+        <!-- meta tag informs the search engine about which character encoding should be used -->
+        <meta charset="utf-8">
+        <!-- this link tag connects to the icon in the media folder to be displayed next to the title -->
+        <link rel="icon" href="media/OMORI icon.ico" type="image/x-icon">
+        <!-- style tag contains all of the embedded style rules of the webpage -->
+        <style>
+            @font-face {
+                font-family: 'OMORI';
+                src: url(font/OMORI_GAME2.ttf) format('truetype');
+            }
+            body {
+                background-color: black;
+                background-image: url(media/OMORI\ background.png);
+                background-position: center;
+                background-size: cover;
+            }
+
+            img {
+                display: grid;
+                margin-top: 3%;
+                margin: auto;
+                place-items: center;
+            }
+
+            h1 {
+                color: whitesmoke;
+                font-family: 'OMORI', sans-serif;
+                font-size: 500%;
+                margin-bottom: -5px;
+                margin-top: -10px;
+                text-align: center;
+            }
+
+            video {
+                display: grid;
+                height: 100vh;
+                margin: auto;
+                padding-bottom: 3%;
+                place-items: center;
+            }
+
+            p {
+                font-family: 'OMORI', sans-serif;
+                padding: 3%;
+            }
+
+            footer {
+                background-color: black;
+                color: whitesmoke;
+                font-size: 35px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <!-- body tag contains all the information visible within the webpage -->
+    <body>
+        <!-- image tag that displays the logo 'OMORI' -->
+        <img src="media/OMORI logo.webp" alt="OMORI logo" width="350" height="164">
+        <!-- header 1 tag shows the title text of the video presented in the webpage -->
+        <h1>OMORI - Final Duet</h1>
+        <!-- video tag presents the embedded video with added controls, a loop attribute, and an appropriate poster image -->
+        <video 
+        width="1100" 
+        height="618" 
+        controls 
+        loop 
+        poster="media/Poster.png">
+        <source src="media/OMORI - Final Duet.mp4" type="video/mp4">
+    </video>
+    <!-- a footer tag containing the footer text -->
+    <footer>
+        <!-- p tag to display the footer text -->
+        <p>Margielyn Atienza 2025 CC L4</p>
+    </footer>
+    </body>
+</html>
