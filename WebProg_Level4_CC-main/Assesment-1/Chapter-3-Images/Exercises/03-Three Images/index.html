@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- The html tag comprising of all the html contents within the web page -->
+<html lang="en">
+    <!-- The head element contains the title and meta tag-->
+    <head>
+        <!-- title element of the webpage-->
+        <title>Astronomical views</title>
+        <!-- meta tag informs the search engine about which character encoding should be used -->
+        <meta charset="UTF-8">
+        <!-- embedded style sheet comprising of all the style rules for the webpage -->
+        <style>
+            @font-face {
+                font-family: 'SpeedyRegular-7BLoE';
+                src: url(font/SpeedyRegular-7BLoE.ttf) format('truetype');
+            }
+
+            * {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            h1 {
+                text-align:  center;
+                font-family: 'SpeedyRegular-7BLoE', sans-serif;
+                font-size: 500%;
+                color: lightgoldenrodyellow;
+                margin-top: -10px;
+            }
+ 
+            h2 {
+                text-align: center;
+                font-family: 'SpeedyRegular-7BLoE', sans-serif;
+                font-size: 300%;
+                color: whitesmoke;
+                margin-top: 100px;
+            }
+
+            header {
+                background-color: rgb(0, 0, 48);
+                padding: 30px;
+            }
+
+            nav {
+                text-align: center;
+                margin-top: -20px;
+            }
+
+            nav a {
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 120%;
+                letter-spacing: px;
+            }
+
+            img { 
+                filter: contrast(130%) grayscale(100%);
+                border-radius: 15px;
+            }
+
+            figure { 
+                place-items: center;
+            }
+
+            figcaption {
+                padding-top: 50px;
+                font-size: 20px;
+                color: whitesmoke
+            }
+
+            a { 
+                color: lightgoldenrodyellow;
+                text-decoration: none;
+            }
+
+            body {
+                background-color: black;
+            }
+
+            footer {
+                font-size: 15px;
+                text-align: center;
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    
+    <!-- the body element contains all the visibile contents within the webpage -->
+    <body>
+        <!-- header element has the header and anchor ids -->
+        <header>
+            <!-- Main header for the webpage -->
+            <h1> ASTRONOMICAL VIEWS </h1>
+            <!-- navigation section containing all the anchor ids -->
+            <nav>
+                <!-- anchor ids for Gibbous Moon, Lagoon Nebula, and Starry Sky -->
+                <a href="#Moon">GIBBOUS MOON</a>
+                <a href="#Nebula">LAGOON NEBULA</a>
+                <a href="#Stars">STARRY SKY</a>
+            </nav>
+        </header>
+
+        <!-- anchor id for the Gibbous Moon section -->
+        <div id="Moon">
+            <!-- heading for the Moon section -->
+            <h2>Gibbous Moon</h2>
+            <!-- figure element isolates the image -->
+            <figure>
+                <!-- image tag for moon-->
+                <img src="images/moon.jpg" alt="Detailed Close-Up of Waxing Gibbous Moon" width="800" height="" title="Gibbous Moon">
+                <!-- figcaption element contains the license details of the image -->
+                <figcaption>
+                    This image is in the <a href="https://www.pexels.com/photo/detailed-close-up-of-waxing-gibbous-moon-28939367/"> public domain (CC0)</a> and free for any use.
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- anchor id for the Lagoon Nebula section -->
+        <div id="Nebula">
+            <!-- heading for the nebula section -->
+            <h2>Lagoon Nebula</h2>
+            <!-- figure element isolates the image -->
+            <figure>
+                <!-- image tag for nebula -->
+                <img src="images/Nebula.jpg" alt="The Messier 8/Lagoon Nebula surrounded by stars" width="800" height="" title="Lagoon Nebula">
+                <!-- figcaption element contains the license details of the image -->
+                <figcaption>
+                 This image is in the <a href="https://pixabay.com/photos/lagoon-nebula-messier-8-ngc-6523-11143/"> public domain (CC0)</a> and free for any use.
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- anchor id for the Starry Sky section -->
+        <div id="Stars">
+            <!-- heading for the star section -->
+            <h2>Starry Sky</h2>
+            <!-- figure element isolates the image -->
+            <figure>
+                <!-- image tag for stars -->
+                <img src="images/Stars.jpg" alt="Stars in the Sky during Night Time" width="800" height="" title="Starry Sky">
+                <!-- figcaption element contains the license details of the image -->
+                <figcaption>
+                    This image is in the <a href="https://www.pexels.com/photo/stars-in-the-sky-during-night-time-8137732/"> public domain (CC0)</a> free for any use.
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- footer class details the information separate from the body -->
+        <footer>
+            <br><br><hr>
+            <!-- Paragraph element containing copyright information -->
+            <p>Copyright &copy; 2025 Margielyn Rose Atienza</p>
+        </footer>
+    </body>
+</html>
