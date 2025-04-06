@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- html tag containing all the html contents within the webpage -->
+<html lang="en">
+    <!-- head tag is comprised of contents such as the title, meta, and link tags -->
+    <head>
+        <!-- title tag defines the title of the html document -->
+        <title>Petrol Cost Calculator</title>
+        <!-- meta tag informs the search engine about which character encoding should be used -->
+        <meta charset="utf-8">
+        <!-- link tag connects the stylesheet to the html document -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- body tag contains all the visible contents of the webpage -->
+    <body>
+        <!-- heading 1 tag displays the title of the activity, a Petrol Cost Calculator -->
+        <h1>PETROL COST CALCULATOR</h1>
+        
+        <!-- heading 2 tag displays the purpose of the first field -->
+        <h2>Cost per Liter (€)</h2>
+        <!-- input tag, also the first field, has a default value of 1.72 with an id titled "CostpL" from "Cost per Liter" -->
+        <input type="number" id="CostpL" value="1.72">
+
+        <!-- heading 2 tag displays the purpose of the second field -->
+        <h2>Liters purchased</h2>
+        <!-- input tag, also the second field, has a default value of 0 with an id titled "Lpurchased" from "Liters purchased" -->
+        <input type="number" id="Lpurchased" value="0">
+
+        <!-- button tag that calculates the total cost once the user enters the two values and clicks the button by calling a function titled "calculateTotal" defined in the JavaScript file -->
+        <button type="button" onclick="calculateTotal()">Calculate Total Cost</button>
+        <!-- heading 2 tag displays the "Total" header text -->
+        <h2>Total</h2>
+        <!-- a p tag to present the final output to the user with an id titled "cost"-->
+        <p id="cost">€ 0.00</p>
+
+        <!-- script tag which connects the JavaScript file to this HTML document-->
+        <script src="index.js"></script>
+    </body>
+</html>
