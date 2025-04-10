@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Kids Magazine';
+    src: url(font/Kids\ Magazine.ttf) format('truetype');
+}
+
+body {
+    background-color:lavenderblush;
+    color:rgb(102, 0, 68);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 3% 5%;
+}
+
+h1 {
+    color: mediumvioletred;
+    font-family: 'Kids Magazine', serif;
+    font-size: 350%;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(157, 6, 107);
+    font-family: 'Kids Magazine', serif;
+    font-size: 175%;
+    margin: auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+dl {
+    display: grid;
+    font-size: 110%;
+    height: 100vh;
+}
+
+dt {
+    font-size: 160%;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+dd {
+    padding-bottom: 20px;
+}
+
+#HTMLtags {
+    background-color: mistyrose;
+    border-radius: 50px;
+    border: 15px groove rgb(228, 164, 194);
+    height: 420vh;
+    padding: 3%;
+}
+
+.listExamples {
+    margin-top: -4%;
+    padding-left: -50%;
+}
+
+pre {
+    background-color:rgb(255, 251, 254);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(255, 175, 191, 0.137);
+    color:rgb(207, 2, 94);
+    font-size: 14px;
+    padding: 5%;
+ 
+}
+
+#CSSproperties {
+    background-color:mistyrose;
+    border-radius: 50px;
+    border: 15px groove rgb(228, 164, 194);
+    padding: 3%;
+}
+
+#column{
+    column-count: 2;
+    column-gap: 5%;
+    column-width: 5%;
+    display: flex;
+}
