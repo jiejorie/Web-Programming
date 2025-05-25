@@ -1,0 +1,103 @@
+body {
+ background-color: white !important;
+ color: black !important;
+ font-size: 11pt !important;
+ text-align: justify !important;
+ line-height: 1.4 !important;
+ margin: 7% !important;
+}
+
+nav, footer, button {
+    display: none !important;
+}
+
+
+
+
+
+/* Header */
+header {
+    text-align: center;
+}
+
+
+
+
+/* Headings */
+h2, h3 {
+    margin: 5% 0 3.5% 0;
+    text-align: center;
+}
+
+
+
+/* Main section */
+main dl {
+    text-align: center;
+    margin: 0% 15%;
+}
+
+main dt {
+    font-weight: bold;
+}
+
+main dd {
+    margin-bottom: 5%;
+}
+
+main blockquote {
+    padding-left: 15px;
+    border-left: 3px solid black;
+    margin-bottom: 30px;
+}
+
+main img {
+    width: 600px;
+    height: auto;
+    padding-left: 3.5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    page-break-after: avoid;
+}
+
+main figcaption {
+    text-align: center;
+}
+
+main iframe {
+   width: 250px;
+   height: 150px;
+   margin: auto;
+   display: block;
+   border-radius: 5px;
+}
+
+.page-break {
+    page-break-before: always !important;
+    margin-top: 10% !important;
+}
+
+
+
+
+
+/* Aside section */
+aside a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+aside a::after {
+    content: "\A(" attr(href) ") " !important; 
+    white-space: pre !important;
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+aside li {
+    margin: 3% 0;
+    
+}

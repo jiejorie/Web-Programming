@@ -1,0 +1,647 @@
+/* Fonts */
+@font-face {
+    font-family: 'francois one';
+    src: url(media/fonts/francois-one.regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'HK nova';
+    src: url(media/fonts/hk-nova-regular-r.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url(media/fonts/LeagueGothic-Regular-VariableFont_wdth.ttf) format('truetype');
+}
+
+body {
+    font-family: 'HK nova', sans-serif;
+    background-image: url(media/images/All/background-art.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+}
+
+
+
+
+
+
+
+
+
+
+/* Navigation bar */
+nav {
+    grid-area: navbar;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 2%;
+    align-items: center;
+    height: 7vh;
+    position: sticky;
+    top: 0px;
+    justify-content: last baseline;
+    border-bottom: 3px solid rgb(125, 94, 17);
+    z-index: 1000;  
+}
+
+nav ul {
+    display: flex;
+    flex-shrink: 0;
+}
+
+nav li {
+    list-style: none;
+    flex-shrink: 0;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    width: calc(100% - 100px);
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.15s ease;
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav li a:hover, .selected-nav {
+    background-color: gold;
+    color: black;
+
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    padding: 3vh 3vw;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'francois one', sans-serif;
+    transition: 0.15s ease-in;
+    row-gap: 10px;
+    
+}
+
+nav img {
+    margin-right: auto;
+}
+
+#download {
+    background-color: gold;
+    margin-left: auto;
+    margin-right: 1%;
+    padding: 1.5vh 2vw;
+    flex-shrink: 0;
+    border-radius: 10px;
+    text-shadow:0 0 10px darkgoldenrod;
+
+}
+
+#download:hover {
+    background-color: hsl(43, 74%, 54%);
+}
+
+
+
+
+
+
+
+
+
+
+/* Headers */
+header {
+    grid-area: header;
+    background-image: url(media/gif/header-bg.webp);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 3em 3em 5em 6em black, inset 5em 5em 5em 25em rgba(0, 0, 0, 0.701);
+}
+
+
+#bigHeader{
+    font-family: "League Gothic", sans-serif;
+    padding: 13%;
+    font-size: 800%;
+    text-shadow: 0 0 15px darkgoldenrod;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+#story-header {
+    background-image: url(media/gif/story-header.gif);
+    background-size: cover;
+    background-position: top;
+
+
+}
+
+#features-header {
+    background-image: url(media/gif/features-header.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#background-header {
+    background-image: url(media/gif/background-header.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#impact-header {
+    background-image: url(media/gif/impact-header.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* Headings */
+h1{
+    font-family: "League Gothic", sans-serif;
+    padding: 8% 10%;
+    font-size: 600%;
+    text-shadow: 0 0 15px darkgoldenrod;
+    color: floralwhite;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+h2 {
+    font-family: 'francois one', sans-serif;
+    margin-top: 20%;
+    font-size: 350%;
+    color: gold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.47);
+    text-underline-offset: 15px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    line-height: 1.5em;
+    border: 2px solid darkgoldenrod;
+    border-radius: 0.7em;
+    padding: 3% 15%;
+}
+
+main h3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+    padding: 3%;
+    color: white;
+    text-align: center;
+}
+
+aside h3{
+    font-family: 'League Gothic';
+    font-size: 4rem;
+    color: ghostwhite;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h4 {
+    color: white;
+}
+
+footer h4 {
+    font-size: 1.4rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* Main Section */
+main {
+    grid-area: main;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    line-height: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 1.15rem;
+    background-color: rgba(0, 0, 0, 0.327);
+    padding: 0 10%;
+}
+
+main p {
+    margin-bottom: 5%;
+}
+
+main li {
+    list-style: none;
+}
+
+main blockquote {
+    padding: 0.15em 1.5em;
+    box-shadow: 2px 4px gold;
+    margin-bottom: 10%;
+}
+
+main figure {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main figure img {
+    width: 80%;
+    max-height: 80vh;
+    border-bottom: 1rem solid darkgoldenrod;
+    margin-bottom: 0%;
+}
+
+main figcaption{
+    font-size: 0.9rem;
+}
+
+main img {
+    border-radius: 15px;
+    width: 50vw;
+    margin: 10% 0 15% 0;
+}
+
+main iframe {
+    border: 5px ridge darkgoldenrod;
+    border-radius: 20px;
+    margin-bottom: 7%;
+    width: 40vw;
+    height: 50vh;
+}
+
+main dl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 2%;
+}
+
+main dt{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 3%;
+    background-color: rgb(184, 135, 11);
+    text-align: center;
+    padding: 3% 10%;
+    border-radius: 30px;
+}
+
+
+main dd {
+    font-size: 0.85rem;
+    margin: 1rem 1rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+.element {
+    background-color: goldenrod;
+    padding: 1.5%;
+    border-radius: 20px;
+    transition: ease 0.3s;
+    margin-bottom: 15%;
+}
+
+.element:hover {
+    transform: scale(1.1);
+
+}
+
+.checklist {
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 5%;
+    width: 85%;
+}
+
+.checklist li{
+    background-color: darkgoldenrod;
+    margin-right: 8%;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: ease 0.3s;
+}
+
+.checklist li:hover {
+    transform: scale(1.1);
+}
+
+.gallery {
+    max-width: 75vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div {
+    width: 190%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img {
+    width: 100%;
+    min-height: auto;
+    transition: transform 0.5s;
+    border: 2px solid black;   
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap button {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1.5%;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    background-color: gold;
+    color: white;
+    text-shadow: 0 0 10px rgba(184, 135, 11, 0.571);
+    border: none;
+    border-radius: 25%;
+    z-index: 950;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-wrap button:hover {
+    background-color: hsl(51, 100%, 60%);
+}
+
+.gallery-wrap {
+    position: relative;
+    padding: 5%;
+}
+
+.gallery div img:hover {
+    transform: scale(1.03);
+    filter: brightness(120%);
+    border: 0.5px ridge gold
+}
+
+#backBtn {
+    left: -55px;
+}
+
+#nextBtn {
+    right: -55px;
+}
+
+.download-button {
+    padding: 5px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color:black;
+    font-size: 20pt;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.download-button:active {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.download-button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.download-img {
+    margin: 10% 0 3% 0;
+    border: 2px ridge gold;
+}
+
+
+
+
+
+
+
+
+
+/* Aside Section */
+aside{
+    grid-area: sidebar;
+    position: fixed;
+    height: 100vh;
+    max-width: 250px;
+    top: 4.6rem;
+    align-self: start;
+    background-color: rgb(19, 19, 20);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 990;
+}
+
+aside a {
+    font-family: 'francois one', sans-serif;
+    text-align: center;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+aside a:hover {
+    color: darkgoldenrod;
+}
+
+aside img {
+    height: 220px;
+    border-radius: 10px;
+}
+
+aside ul{
+    margin: 15px;
+
+}
+
+aside li {
+    list-style: none;
+    margin: 0 5%;
+    margin-left: -40px;
+}
+
+aside li:last-child {
+    border: none;
+    height: 400px;
+}
+
+aside ::-webkit-scrollbar {
+    width: 5px;
+}
+
+aside ::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+    border-radius: 10px;
+
+}
+
+.scrollbox {
+    overflow: auto;
+    margin-top: -50px;
+}
+
+.scrollbox-inner li {
+    padding: 30px 0;
+    border-bottom: 2px solid rgb(61, 51, 26);
+}
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+footer {
+    grid-area: footer;
+    font-size: 0.9rem;
+    background-color: rgb(125, 94, 17);
+    padding: 5% 5% 2% 5%;
+    text-align: center;
+    color: ghostwhite;
+    margin-top: 15%;
+    
+}
+
+#footerImages {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img {
+    max-width: auto;
+    max-height: 7vw;
+}
+
+#footerContent {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footerContent div {
+    width: 10vw;
+    flex-shrink: 0;
+}
+
+footer p {
+    margin-top: 5%;
+    border-top: 2px solid white;
+    padding-top: 2%;
+}
+
+footer li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0.9rem;
+    flex-shrink: 0;
+}
+
+footer a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#textInput {
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #ffffff;
+    font-size: 10pt;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 12px;
+}
+
+#textInput:focus {
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+    font-family: 'hk nova', sans-serif;
+    font-size: 10pt;
+}
+
+
+#submit {
+    padding: 5px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color:black;
+    font-size: 20pt;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+
