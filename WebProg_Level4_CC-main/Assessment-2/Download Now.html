@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- links the JavaScript file to this HTML document -->
+    <head>
+        <title>The Stanley Parable</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="styleresponsive.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="styleprint.css" type="text/css" media="print">
+        <link rel="icon" href="media/images/icon.ico" type="image/x-icon">
+    </head>
+
+    <!-- links the JavaScript file to this HTML document -->
+    <body>
+
+        <!-- links the JavaScript file to this HTML document -->
+        <nav>
+            <img src="media/images/All/The_Stanley_Parable_Logo.png" alt="logo" height="40">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Story.html">STORY</a></li>
+                <li><a href="Features.html">FEATURES</a></li>
+                <li><a href="Background.html">BACKGROUND</a></li>
+                <li><a href="Impact.html">IMPACT</a></li>
+            </ul>
+            <a id="download" href="Download Now.html">DOWNLOAD NOW</a>
+        </nav>
+
+        <!-- the main content is shown within this semantic -->
+        <main>
+            
+            <h2>DOWNLOAD NOW!</h2>
+
+            <!-- image displaying the button's corresponding game -->
+            <img src="media/images/Download/Download-1.jpg" alt="The Stanley Parable 2013" class="download-img">
+            <!-- the button leads you to open a new tab on Steam, allowing you to download the corresponding game shown by the image above -->
+            <button type="button" class="download-button" onclick="DownloadTSP2013()">DOWNLOAD ON STEAM</button>
+            
+            <!-- image displaying the button's corresponding game -->
+            <img src="media/images/Download/Download-2.jpg" alt="The Stanley Parable: Ultra Deluxe 2022" class="download-img">
+            <!-- the button leads you to open a new tab on Steam, allowing you to download the corresponding game shown by the image above -->
+            <button type="button" class="download-button" onclick="DownloadTSP2022()">DOWNLOAD ON STEAM</button>
+        </main>
+
+        <!-- a page break is applied onto the column on the left for the print view -->
+        <aside class="page-break">
+
+            <h3>LATEST NEWS</h3>
+
+            <!-- keeps the content in a container that allows scrolling motion-->
+            <div class="scrollbox">
+                <!-- keeps all the text and links in one area -->
+                <div class="scrollbox-inner">
+                    <ul>
+                        <li><a target="_blank" href="https://www.gamedeveloper.com/business/the-stanley-parable-ultra-deluxe-sells-over-100k-copies-on-steam-in-24-hours?">Ultra Deluxe Update Milestone: 100k Copies sold!</a></li>
+                        <li><a target="_blank" href="https://youtu.be/Me-sx-QQXrs?si=FeSuVqdmt-aZYWYr">Community Mod: “Stanley's Choice” Released</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/reel/DGn6ibgvLsL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Developer Talk Scheduled at IndieCon 2025</a></li>
+                        <li><a target="_blank" href="https://www.trueachievements.com/a358406/speed-run-achievement?">Speedrunning Gets Competitive</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/racheldrawsthis/p/CdENE7AOXF4/?">Fan Art of the Month: April</a></li>
+                        <li><a target="_blank" href="https://stanleyparable.com/hds/3/#:~:text=On%20December%207%2C%202018%2C%20at,were%20in%20April%2027%2C%202022%3F"> <img src="media/images/All/sidebar img1.jpg" alt="The Stanley Parable: Ultra Deluxe" height="200">ULTRA DELUXE VERSION NOW AVAILABLE!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- footer section of the HTML document -->
+        <footer>
+
+            <!-- container which holds all the images within the footer -->
+            <div id="footerImages">
+                <img src="media/images/All/crows-logo-words.png" alt="crowscrowscrows logo" height="70">
+                <img src="media/images/All/Steam-logo.png" alt="Steam Logo" height="100">
+                <img src="media/images/All/esrb_tspud_web.png" alt="ESRB Rating: Teen" height="70">
+            </div>
+
+            <!-- container which holds the Footer's text content -->
+            <div id="footerContent">
+
+                <!-- posssesses the 'Explore' information -->
+                <div id="Explore">
+                    <h4>EXPLORE</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Story.html">Story</a></li>
+                        <li><a href="Features.html">Features</a></li>
+                        <li><a href="Background.html">Background</a></li>
+                        <li><a href="Impact.html">Impact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- carries the 'Follow' information -->
+                <div id="Follow">
+                    <h4>FOLLOW</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UC_6qm9hr5czPglKbY_NfylQ">YouTube</a></li>
+                        <li><a target="_blank" href="https://x.com/crowsx3">X</a></li>
+                        <li><a target="_blank" href="https://discord.com/invite/crows">Discord</a></li>
+                    </ul>
+                </div>
+                
+                <!-- keeps all the 'Legal' information -->
+                <div id="Legal">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://crowscrowscrows.com/privacy/">Privacy Policy</a></li>
+                        <li><a target="_blank" href="https://crowscrowscrows.com/privacy/">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- keeps all the 'Contact' information -->
+                <div id="Contact">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li><a target="_blank" href="mailto:hello@crowscrowscrows.com">Email</a></li>
+                    </ul>
+                </div>
+                
+                <!-- contains all the 'Subscribe' information -->
+                <div id="Subscribe">
+                    <h4>SUBSCRIBE NOW</h4>
+                    <!-- asks the user for their email. Once submitted, the data is sent to a back-end server -->
+                    <form action="/action_page.php">
+                        <input type="text" id="textInput" name="EmailAddress" placeholder="Enter your email"><br>
+                        <input type="submit" id="submit" name="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer's copyright information -->
+            <p>&copy; 2025 All Rights Reserved. Designed by Margielyn Atienza</p>
+        </footer>
+        
+        <!-- links the JavaScript file to this HTML document -->
+        <script src="script.js"></script>
+    </body>
+</html>
